@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { Text, StyleSheet, View, Button } from "react-native";
 
-const TrackDetailScreen = () => {
+const SampleScreen = () => {
     return(
         <View>
-            <Text style={{fontSize: 48}}>TrackDetailScreen</Text>
+            <Text>Sample Screen</Text>
         </View>
     )
 }
@@ -13,4 +13,4 @@ const styles = StyleSheet.create({
 
 })
 
-export default TrackDetailScreen
+export default SampleScreen

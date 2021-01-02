@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { Text, StyleSheet, View, Button } from "react-native";
 
-const SampleScreen = () => {
+const AccountScreen = () => {
     return(
         <View>
-            <Text>Sample Screen</Text>
+            <Text style={{fontSize: 48}}>AccountScreen</Text>
         </View>
     )
 }
@@ -13,4 +13,4 @@ const styles = StyleSheet.create({
 
 })
 
-export default SampleScreen
+export default AccountScreen

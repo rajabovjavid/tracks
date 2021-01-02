@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import { Text, StyleSheet, View, Button } from "react-native";
 
-const SampleScreen = () => {
+const TrackListScreen = ({navigation}) => {
     return(
         <View>
-            <Text>Sample Screen</Text>
+            <Text style={{fontSize: 48}}>TrackListScreen</Text>
+            <Button title="Go to Track Detail" onPress={()=>navigation.navigate("TrackDetail")} />
         </View>
     )
 }
@@ -13,4 +14,4 @@ const styles = StyleSheet.create({
 
 })
 
-export default SampleScreen
+export default TrackListScreen

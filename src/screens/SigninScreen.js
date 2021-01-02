@@ -1,16 +1,14 @@
-import React, { useState } from "react";
-import { Text, StyleSheet, View, Button } from "react-native";
+import React, {useState} from "react";
+import {Text, StyleSheet, View, Button} from "react-native";
 
-const SampleScreen = () => {
-    return(
+const SigninScreen = () => {
+    return (
         <View>
-            <Text>Sample Screen</Text>
+            <Text style={{fontSize: 48}}>SigninScreen</Text>
         </View>
     )
 }
 
-const styles = StyleSheet.create({
+const styles = StyleSheet.create({})
 
-})
-
-export default SampleScreen
+export default SigninScreen
