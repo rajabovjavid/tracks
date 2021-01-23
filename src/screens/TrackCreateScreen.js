@@ -2,6 +2,7 @@ import React, { useContext, useCallback } from "react";
 import { StyleSheet, LogBox } from "react-native";
 import { Text } from "react-native-elements";
 import { SafeAreaView, withNavigationFocus } from "react-navigation";
+import { FontAwesome } from '@expo/vector-icons';
 
 import { Context as LocationContext } from "../context/LocationContext";
 
@@ -37,6 +38,11 @@ const TrackCreateScreen = ({ isFocused }) => {
 LogBox.ignoreLogs([
   "Your project is accessing the following APIs from a deprecated global rather than a module import: Constants (expo-constants).",
 ]);
+
+TrackCreateScreen.navigationOptions = {
+  title: 'Add Track',
+  tabBarIcon: <FontAwesome name="plus" size={20} />
+};
 
 const styles = StyleSheet.create({
   container: {
